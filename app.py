@@ -12,9 +12,6 @@ def chat():
     bot_reply = f"You said: {user_message}"
     return f"<h1>{bot_reply}</h1><br><a href='/'>Back</a>"
 
+# Only one block
 if __name__ == "__main__":
-    app.run(debug=True)
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
-
+    app.run(host="0.0.0.0", port=5000, debug=True)
